@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <title>Browser Win Engine</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="mark" aria-hidden="true">BW</div>
+      <div><p class="eyebrow">CHROMEBOOK • WEBASSEMBLY</p><h1>Browser Win Engine</h1>
+      <p class="sub">Eksperimen kompatibilitas aplikasi Windows di browser.</p></div>
+    </header>
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">RUNTIME</p><h2>Status engine</h2></div><span id="statusPill" class="pill warn">Belum tersedia</span></div>
+      <p id="runtimeMessage" class="message">Runtime Boxedwine WebAssembly belum dipasang. Halaman ini masih launcher prototipe.</p>
+      <div class="meter"><span id="meterBar"></span></div>
+      <p class="hint">Halaman terbuka tidak berarti Windows atau game sudah berjalan.</p>
+    </section>
+    <section class="panel">
+      <p class="eyebrow">APLIKASI LOKAL</p><h2>Pilih file untuk diperiksa</h2>
+      <p class="message">Prototipe ini hanya membaca nama dan ukuran file; belum menjalankannya atau mengunggahnya.</p>
+      <label class="file-button" for="appFile">Pilih file aplikasi</label>
+      <input id="appFile" type="file" accept=".exe,.zip,.7z,.rar,.msi,.bat">
+      <div id="fileInfo" class="file-info">Belum ada file dipilih.</div>
+    </section>
+    <section class="panel"><p class="eyebrow">LANGKAH SELANJUTNYA</p><h2>Roadmap</h2>
+      <ul><li>Build Boxedwine web melalui cloud.</li><li>Uji runtime dan filesystem yang kompatibel.</li><li>Integrasikan launcher setelah output runtime terverifikasi.</li></ul>
+      <a class="link" href="https://github.com/danoon2/Boxedwine" target="_blank" rel="noopener noreferrer">Buka sumber Boxedwine ↗</a>
+    </section>
+    <footer>Starter prototype · belum menjalankan executable Windows</footer>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

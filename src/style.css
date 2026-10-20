@@ -1,0 +1,26 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #0b0d13; color: #eef1fa; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at top, #202642 0, #0b0d13 58%); min-height: 100vh; }
+.shell { width: min(760px, 100% - 28px); margin: 0 auto; padding: 34px 0 24px; }
+.top { display: flex; gap: 16px; align-items: center; margin-bottom: 26px; }
+.mark { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 18px; background: linear-gradient(135deg, #8a5cff, #38d6c7); color: #080a12; font-weight: 900; font-size: 20px; }
+h1 { margin: 2px 0 6px; font-size: clamp(25px, 5vw, 36px); letter-spacing: -1px; }
+h2 { margin: 4px 0 10px; font-size: 20px; }
+p { line-height: 1.55; }
+.eyebrow { margin: 0; color: #9fa9ce; font-size: 11px; font-weight: 800; letter-spacing: 1.7px; }
+.sub { margin: 0; color: #aeb6ce; }
+.panel { border: 1px solid #2c3248; background: rgba(19,23,37,.92); border-radius: 18px; padding: 22px; margin: 14px 0; box-shadow: 0 12px 34px #0002; }
+.panel-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.pill { border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.pill.warn { color: #ffd98b; background: #4c381e; }
+.message { color: #c6cce0; }
+.hint, footer { color: #818ba9; font-size: 12px; }
+.meter { height: 6px; border-radius: 20px; background: #2c3248; overflow: hidden; }
+.meter span { display: block; width: 0; height: 100%; background: #54dbc5; }
+.file-button { display: inline-block; padding: 11px 15px; margin: 8px 0; border-radius: 10px; background: #b4a0ff; color: #151021; font-weight: 800; cursor: pointer; }
+input[type=file] { display: block; width: 100%; margin-top: 6px; color: #bfc6dc; font-size: 13px; }
+.file-info { padding: 12px; margin-top: 10px; border: 1px dashed #414965; border-radius: 10px; color: #c6cce0; overflow-wrap: anywhere; font-size: 13px; }
+li { margin: 8px 0; color: #c6cce0; }
+.link { display: inline-block; color: #b4a0ff; margin-top: 8px; }
+footer { text-align: center; padding-top: 14px; }
+@media (max-width: 480px) { .panel { padding: 17px; } .panel-head { align-items: flex-start; flex-direction: column; } }
